@@ -7,7 +7,7 @@ create table Cuidador(
 
 create table especialidadCuidador(
   especialidadCuidador_ID numeric,
-  cuidador_ID numeric,
+  cuidador_ID varchar,
   familia_ID numeric,
   primary key (especialidadCuidador_ID),
   foreign key (cuidador_ID) references Cuidador,
@@ -24,7 +24,7 @@ create table Animal(
   animal_ID numeric,
   animal_nombre_tecnico varchar(50),
   animal_nombre_comun varchar(50),
-  familia_ID,
+  familia_ID numeric,
   tamano varchar(15),
   primary key (animal_ID),
   foreign key (familia_ID) references Familia
