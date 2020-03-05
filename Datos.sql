@@ -1,8 +1,8 @@
 /*Cuidadores*/
-insert into Cuidador values('42995854','Maria Mendez', 'Diurno');
-insert into Cuidador values('9733201', 'Pedor Perez', 'Nocturno');
-insert into Cuidador values('80943410', 'Alvaro Alvarez', 'Diurno');
-insert into Cuidador values('100029981', 'Cecilia Cubillos', 'Nocturno');
+insert into Cuidador values('42995854','Maria Mendez', 'Diurna');
+insert into Cuidador values('9733201', 'Pedor Perez', 'Nocturna');
+insert into Cuidador values('80943410', 'Alvaro Alvarez', 'Diurna');
+insert into Cuidador values('100029981', 'Cecilia Cubillos', 'Nocturna');
 
 /*Familias*/
 insert into Familia values (1, 'Camelidae');
@@ -12,15 +12,22 @@ insert into Familia values (4, 'Canidae');
 insert into Familia values (5, 'Cheirogaleidae');
 
 /*Dieta*/
-insert into Dieta values (2, 'Herbivora', 20, 200, 15, 25, 180);
-insert into Dieta values (4, 'Insectivora', 80, 18, 60, 30, 5);
-insert into Dieta values (11, 'Carnivora', 250, 50, 180, 70, 30);
-insert into Dieta values (12, 'Herbivora', 22.5, 130, 10, 23.5, 120);
-insert into Dieta values (15, 'Carnivora', 150, 75, 85, 65, 24);
-/*Falta dieta carnivora muy grande, frugivora muy pequeño y insectivora mediana.*/
+insert into Dieta values (1, 'Herbivora', 25, 60); /*Pequeño*/
+insert into Dieta values (2, 'Herbivora', 20, 200, 15, 25, 180); /*Grande*/
+insert into Dieta values (3, 'Carnivora', 60, 10, 45, 55, 15); /*Pequeño*/
+insert into Dieta values (4, 'Insectivora', 80, 18, 60, 30, 5); /*Pequeño*/
+insert into Dieta values (5, 'Insectivora', 120, 27, 90, 45, 7.5); /*Medio*/
+insert into Dieta values (6, 'Frugivora', 10, 100, 25, 40, 80): /*Mediano*/
+insert into Dieta values (7, 'Carnivora', 375, 75, 270, 105, 45); /*Muy grande*/
+insert into Dieta values (8, 'Frugivora', 3.025, 30.25, 7.5625, 12.1, 24.2); /*Muy pequeño*/
+insert into Dieta values (11, 'Carnivora', 250, 50, 180, 70, 30); /*Grande*/
+insert into Dieta values (12, 'Herbivora', 22.5, 130, 10, 23.5, 120); /*Mediano*/
+insert into Dieta values (15, 'Carnivora', 150, 75, 85, 65, 24); /*Mediano*/
+
 
 /*Actividad*/
-
+insert into Actividad values (1, 'Diurna');
+insert into Actividad values (2, 'Nocturna');
 
 /*Animales*/
 insert into Animal values (1, 'Camelus Dromedarius', 'Camello Dromedario', 1, 'grande');
@@ -51,3 +58,19 @@ insert into especialidadCuidador values (7, '100029981', 1);
 insert into especialidadCuidador values (8, '100029981', 5);
 
 /*ComportamientoAnimal*/
+insert into ComportamientoAnimal values (1, 1, 2, 1);
+insert into ComportamientoAnimal values (2, 2, 2, 1);
+insert into ComportamientoAnimal values (3, 3, 15, 2);
+insert into ComportamientoAnimal values (4, 4, 4, 2);
+insert into ComportamientoAnimal values (5, 5, 15, 1);
+insert into ComportamientoAnimal values (6, 6, 15, 1);
+insert into ComportamientoAnimal values (7, 7, 8, 2);
+insert into ComportamientoAnimal values (8, 8, 5, 2);
+insert into ComportamientoAnimal values (9, 9, 15, 2);
+insert into ComportamientoAnimal values (10, 10, 7, 1);
+insert into ComportamientoAnimal values (11, 11, 15, 1);
+insert into ComportamientoAnimal values (12, 12, 11, 2);
+insert into ComportamientoAnimal values (13, 13, 15, 2);
+insert into ComportamientoAnimal values (14, 14, 2, 1);
+insert into ComportamientoAnimal values (15, 15, 12, 1);
+insert into ComportamientoAnimal values (16, 16, 15, 1);
