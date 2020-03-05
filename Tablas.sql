@@ -30,7 +30,7 @@ create table Animal(
   foreign key (familia_ID) references Familia
 );
 
-create table comportamientoAnimales(
+create table ComportamientoAnimales(
   actividadAnimales_ID numeric,
   animal_ID numeric,
   dieta_ID numeric,
