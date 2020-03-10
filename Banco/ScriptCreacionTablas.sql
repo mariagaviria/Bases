@@ -25,3 +25,5 @@ create table productosDeCliente(
   foreign key (producto_ID) references producto, 
   foreign key (cliente_cc) references cliente
 );
+
+
