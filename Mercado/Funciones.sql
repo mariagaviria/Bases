@@ -22,7 +22,7 @@ LANGUAGE plpgsql;
 
 --Tabla
 SELECT tipo_producto.nom_tipo_producto, ventatipoprodenlocalidad(tipo_producto.nom_tipo_producto, 'BOSA') AS "BOSA",
-										                    ventatipoprodenlocalidad(tipo_producto.nom_tipo_producto, 'CIUDAD BOLIVAR') AS "CIUDAD BOLIVAR",
+					ventatipoprodenlocalidad(tipo_producto.nom_tipo_producto, 'CIUDAD BOLIVAR') AS "CIUDAD BOLIVAR",
                                         ventatipoprodenlocalidad(tipo_producto.nom_tipo_producto, 'USME') AS "USME"
 
 FROM tipo_producto;
